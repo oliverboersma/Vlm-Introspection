@@ -2,3 +2,4 @@ __pycache__/
 *.egg-info/
 .pytest_cache/
 results/**/vectors.pt
+results/  # temporarily ignored while the pilot runs; final outputs are committed at the end
