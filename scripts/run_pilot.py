@@ -17,7 +17,7 @@ from pathlib import Path
 
 import torch
 
-from vlm_introspection.concepts import ConceptVectors, extract
+from vlm_introspection.concepts import ConceptVectors, extract, extract_text
 from vlm_introspection.experiment import EXTRACT_SEEDS, Runner, SweepConfig, save_config
 from vlm_introspection.model import VLM
 
@@ -26,6 +26,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", required=True)
     ap.add_argument("--model", default=None)
+    ap.add_argument("--vectors", choices=["image", "text"], default=None,
+                    help="derive concept vectors from images (default) or text-only prompts")
     ap.add_argument("--quick", action="store_true", help="small calibration grid")
     ap.add_argument("--stage", choices=["all", "sweep", "freeform"], default="all")
     ap.add_argument("--config", help="JSON file overriding SweepConfig fields")
@@ -41,6 +43,8 @@ def main():
                                   n_targets=2, n_extract=8, gen_layers=[12], gen_alphas=[4.0], gen_targets=1)
     if args.config:
         cfg = dataclasses.replace(cfg, **json.loads(Path(args.config).read_text()))
+    if args.vectors:
+        cfg = dataclasses.replace(cfg, vector_source=args.vectors)
     if args.model:
         cfg = dataclasses.replace(cfg, model_id=args.model)
 
@@ -58,7 +62,10 @@ def main():
     else:
         t = time.time()
         layers = sorted(set(cfg.layers + cfg.gen_layers))
-        cv = extract(vlm, layers, n_images=cfg.n_extract, seed_offset=EXTRACT_SEEDS, concepts=cfg.concepts)
+        if cfg.vector_source == "text":
+            cv = extract_text(vlm, layers, concepts=cfg.concepts)
+        else:
+            cv = extract(vlm, layers, n_images=cfg.n_extract, seed_offset=EXTRACT_SEEDS, concepts=cfg.concepts)
         cv.save(vpath)
         print(f"[extract] {len(cv.vectors)} concepts × {len(layers)} layers in {time.time() - t:.0f}s", flush=True)
 

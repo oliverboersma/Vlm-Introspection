@@ -51,6 +51,7 @@ class SweepConfig:
     alphas: list[float] = field(default_factory=lambda: [0.5, 1.0, 2.0, 4.0])
     sites: list[str] = field(default_factory=lambda: ["image", "text"])
     n_extract: int = 16
+    vector_source: str = "image"  # "image": from concept images; "text": from text-only prompts
     n_targets: int = 3
     batch_size: int = 24
     random_seed: int = 1234

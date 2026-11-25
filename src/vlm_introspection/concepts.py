@@ -70,6 +70,45 @@ def extract(vlm, layer_ids: list[int], n_images: int = 16, seed_offset: int = 0,
     return cv
 
 
+TEXT_TEMPLATES = (
+    "Think about {x}.",
+    "Picture {x} in your mind.",
+    "Tell me about {x}.",
+    "Write one sentence about {x}.",
+    "What comes to mind when you imagine {x}?",
+    "Focus all your attention on {x}.",
+    "Describe {x} to someone who has never seen it.",
+    "I keep thinking about {x}.",
+)
+
+
+def _text_phrase(concept: str) -> str:
+    return f"the color {concept}" if CONCEPTS[concept].family == "color" else f"a {concept}"
+
+
+def extract_text(vlm, layer_ids: list[int], concepts: list[str] | None = None) -> ConceptVectors:
+    """Concept vectors from text-only prompts (no image), pooled over text positions.
+
+    The "thought" counterpart of ``extract``: the direction the model uses when
+    a concept is merely talked about, contrasted within its family exactly as
+    for image-derived vectors.
+    """
+    concepts = concepts or list(CONCEPTS)
+    cv = ConceptVectors(layer_ids)
+    for family in sorted({CONCEPTS[c].family for c in concepts}):
+        members = family_members(family)
+        acts_by_layer: dict[int, dict[str, torch.Tensor]] = {L: {} for L in layer_ids}
+        for c in members:
+            per_prompt = [vlm.mean_text_acts(t.format(x=_text_phrase(c)), layer_ids) for t in TEXT_TEMPLATES]
+            for L in layer_ids:
+                acts_by_layer[L][c] = torch.stack([p[L] for p in per_prompt])
+        for L in layer_ids:
+            for c, v in mean_difference(acts_by_layer[L]).items():
+                if c in concepts:
+                    cv.vectors.setdefault(c, {})[L] = v
+    return cv
+
+
 def random_like(v: torch.Tensor, seed: int) -> torch.Tensor:
     """Norm-matched random direction (control for 'any perturbation does this')."""
     g = torch.Generator().manual_seed(seed)

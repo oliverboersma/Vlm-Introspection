@@ -162,6 +162,16 @@ class VLM:
         return {L: torch.cat(v) for L, v in out.items()}
 
     @torch.no_grad()
+    def mean_text_acts(self, prompt: str, layer_ids: list[int]) -> dict[int, torch.Tensor]:
+        """Mean residual activation over the text positions of a text-only prompt → ``{L: (d,)}``."""
+        b = self.build([prompt], [None])
+        mask = b.text_mask.float()
+        with capture(self.layers, layer_ids) as store:
+            self.model(**b.inputs)
+        return {L: ((store[L].float() * mask[..., None]).sum(1) / mask.sum(1, keepdim=True))[0]
+                for L in layer_ids}
+
+    @torch.no_grad()
     def token_norms(self, images: list[Image.Image | None], layer_ids: list[int], site: str,
                     question: str = "Describe this image.") -> dict[int, float]:
         """Median L2 norm of residual vectors at ``site`` positions, per layer (for scaling).
