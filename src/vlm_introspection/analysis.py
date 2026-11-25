@@ -128,6 +128,44 @@ def plot_sweep(rows: list[dict], out_png, title: str = "") -> None:
     plt.close(fig)
 
 
+def plot_headline(rows: list[dict], out_png, alpha: float = 1.0, title: str = "") -> None:
+    """Image site vs text site on one shared scale, with real-image reference lines."""
+    import matplotlib
+
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    colors = {"see": "#2b6cb0", "think": "#c05621"}
+    real = {p: next((r for r in rows if r["condition"] == "real" and r["probe"] == p), None) for p in colors}
+    fig, axes = plt.subplots(1, 2, figsize=(9.5, 3.6), sharey=True)
+    for ax, site, name in ((axes[0], "image", "Vector added at image tokens"),
+                           (axes[1], "text", "Vector added at text tokens")):
+        ax.axhline(0, color="#999", lw=0.8)
+        for probe, col in colors.items():
+            if real[probe]:
+                ax.axhline(real[probe]["spec"], color=col, ls="--", lw=1, alpha=0.6)
+            for cond, ls, mk in (("concept", "-", "o"), ("random", ":", None)):
+                pts = sorted((r["layer"], r["spec"], r["spec_se"]) for r in rows if r["condition"] == cond
+                             and r["site"] == site and r["alpha"] == alpha and r["probe"] == probe)
+                if pts:
+                    x, y, e = zip(*pts)
+                    ax.errorbar(x, y, yerr=e, color=col, ls=ls, marker=mk, ms=4, capsize=2, lw=1.6 if mk else 1,
+                                label=f"{probe.upper()} probe, {cond} vector" if site == "image" else None)
+        ax.set_title(name, fontsize=10)
+        ax.set_xlabel("injection layer")
+    axes[0].set_ylabel("specificity (Δ log-odds,\non-target − off-target)")
+    if real["see"]:
+        axes[1].text(axes[1].get_xlim()[1], real["see"]["spec"], " real image, SEE", color=colors["see"],
+                     va="center", fontsize=8)
+        axes[1].text(axes[1].get_xlim()[1], real["think"]["spec"], " real image, THINK", color=colors["think"],
+                     va="center", fontsize=8)
+    axes[0].legend(fontsize=7.5, frameon=False, loc="upper right", bbox_to_anchor=(1.0, 0.88))
+    fig.suptitle(title or f"Concept injection while viewing a neutral image (α = {alpha:g})", fontsize=11)
+    fig.tight_layout()
+    fig.savefig(out_png, dpi=150, bbox_inches="tight")
+    plt.close(fig)
+
+
 def fmt_table(rows: list[dict], cols: list[str]) -> str:
     def f(v):
         return f"{v:.2f}" if isinstance(v, float) else str(v)

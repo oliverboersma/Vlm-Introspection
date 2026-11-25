@@ -9,8 +9,8 @@ from collections import defaultdict
 from pathlib import Path
 from statistics import mean
 
-from vlm_introspection.analysis import (baseline_table, deltas, fmt_table, freeform_rates, load, plot_sweep,
-                                        specificity_table)
+from vlm_introspection.analysis import (baseline_table, deltas, fmt_table, freeform_rates, load, plot_headline,
+                                        plot_sweep, specificity_table)
 
 
 def _get(rows, **kw):
@@ -75,6 +75,7 @@ def main(d):
 
     (d / "summary.md").write_text("\n".join(out))
     plot_sweep(rows, d / "sweep.png", title="Concept injection while viewing a neutral image (SmolVLM-500M)")
+    plot_headline(rows, d / "headline.png")
     print("\n".join(out))
 
 
