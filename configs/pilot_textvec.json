@@ -1,0 +1,11 @@
+{
+  "vector_source": "text",
+  "concepts": ["red", "blue", "green", "yellow", "circle", "square", "triangle", "star"],
+  "layers": [4, 8, 12, 16, 20],
+  "alphas": [0.5, 1.0, 2.0],
+  "sites": ["image", "text"],
+  "n_targets": 3,
+  "gen_layers": [4, 16],
+  "gen_alphas": [1.0],
+  "gen_targets": 2
+}

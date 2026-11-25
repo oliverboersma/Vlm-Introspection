@@ -2,5 +2,5 @@ __pycache__/
 *.egg-info/
 .pytest_cache/
 results/**/vectors.pt
-# temporarily ignored while the pilot runs; final outputs are committed at the end
-results/
+# in progress; committed when the run completes
+results/pilot_textvec/
