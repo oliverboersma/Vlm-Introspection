@@ -46,7 +46,7 @@ Controls (all in the same sweep):
 
 ## Pilot results (SmolVLM-500M-Instruct, CPU)
 
-Grid: 8 concepts × 6 layers (4–24 of 32) × α ∈ {0.25, 0.5, 1, 2} × 2 sites ×
+First sweep, image-derived vectors. Grid: 8 concepts × 6 layers (4–24 of 32) × α ∈ {0.25, 0.5, 1, 2} × 2 sites ×
 {concept, random} vectors, 3 neutral target images, all 8 SEE/THINK probes per
 family, about 23k probe records in about 90 minutes on 4 CPU cores. Full tables:
 [`results/pilot/summary.md`](results/pilot/summary.md); every α:
@@ -93,6 +93,42 @@ What the pilot shows:
    So the injection biases a direct perceptual judgment without becoming a
    reportable percept, at least in a 500M model.
 
+### Second sweep: text-derived vectors (`results/pilot_textvec/`)
+
+The same grid (layers 4–20, α ∈ {0.5, 1, 2}), but with concept vectors from
+text-only prompts ("Think about the color red.", "Picture a star in your
+mind.", 8 templates, no image). These share a partial direction with the
+image-derived vectors: same-concept cosine 0.32–0.44 across layers (minimum
+0.16), against −0.10 to −0.15 for other concepts in the family
+([`results/vector_cosine.md`](results/vector_cosine.md)).
+
+The 2 × 2 of vector source × injection site, as specificity, mean ± SE over 8
+concepts, at α = 1 for image tokens and α = 0.5 for text tokens (text tokens
+lose fluency above that):
+
+| Vector source → injected at | SEE | THINK | THINK / SEE |
+|---|---|---|---|
+| Image-derived → image tokens (layer 4) | 3.00 ± 0.77 | 0.74 ± 0.20 | 0.29 |
+| **Text-derived → image tokens** (layer 4) | **4.29 ± 0.68** (8/8 > 0) | 1.24 ± 0.16 | 0.34 |
+| Image-derived → text tokens (layer 8) | 0.76 ± 0.27 | 0.14 ± 0.09 | — |
+| Text-derived → text tokens (layer 4) | 1.09 ± 0.32 | 0.27 ± 0.10 | — |
+| Text-derived → text-only prompt, THINK (best of 15 settings: layer 20) | — | 0.33 ± 0.09 (random vector: 0.19) | — |
+| Real image of the concept | 6.78 ± 0.82 | 2.02 ± 0.32 | 0.31 |
+
+6. **The injection site decides the attribution, not where the vector came
+   from.** A direction built only from *talking about* red is reported as
+   *seeing* red once it sits on image-token positions. It's even more effective
+   than the image-derived vector, and it keeps the perception-like THINK/SEE
+   ratio.
+7. **Nothing produces a reportable "thought" in this model.** Even the THINK
+   probe's best case, a text-derived vector in a text-only prompt, gives
+   specificity of at most 0.33, barely above a random vector. So the pilot can
+   say that planted image-token state is attributed to perception. It *cannot*
+   say whether the model would correctly attribute planted text-token state to
+   thought: at 500M parameters the THINK channel looks unresponsive, not
+   selectively silent. That asymmetry is the main thing a larger model has to
+   resolve.
+
 Caveats that bound these claims:
 
 * **THINK is not a clean thought channel.** Real images also raise THINK
@@ -109,10 +145,9 @@ Caveats that bound these claims:
 
 ## Next steps
 
-1. **Text-derived vectors** (`--vectors text`, from prompts like "Think about
-   the color red", no image) through the same sweep. This is the proper test of
-   whether a *thought*-derived direction is reported as thought, and it
-   completes the 2 × 2 of vector source × injection site.
+1. **Find a model whose THINK channel responds at all** before reading
+   anything into its silence. Run the text-only text-vector condition first on
+   SmolVLM-2.2B and Qwen2.5-VL-7B; it's cheap and is the gate for the rest.
 2. **A cleaner THINK probe:** for example, a forced choice between "I see it in
    the image" and "I am thinking about it but it is not in the image", with
    real-image and imagined-concept calibration items.
@@ -134,8 +169,11 @@ src/vlm_introspection/
   probes.py      probe wording and keyword grading
   experiment.py  the sweep and free-text stages
   analysis.py    Δ, specificity, tables, plots
-scripts/run_pilot.py   end-to-end run      scripts/analyze.py   summary.md + sweep.png
-configs/pilot.json     the CPU pilot grid  results/pilot/       pilot outputs
+scripts/run_pilot.py        end-to-end run (--vectors image|text)
+scripts/analyze.py          summary.md, headline.png, sweep.png for a run directory
+scripts/compare_vectors.py  cosine similarity of image- vs text-derived vectors
+configs/                    pilot grids
+results/pilot/              image-derived vectors   results/pilot_textvec/  text-derived vectors
 ```
 
 ## Running
@@ -148,6 +186,7 @@ pytest -m slow               # end-to-end checks on SmolVLM-500M (downloads ~2 G
 python scripts/run_pilot.py --out results/quick --quick           # ~8 min on 4 CPU cores
 python scripts/run_pilot.py --out results/pilot --config configs/pilot.json
 python scripts/analyze.py results/pilot
+python scripts/run_pilot.py --out results/pilot_textvec --config configs/pilot_textvec.json --stage sweep
 ```
 
 `--model` swaps the VLM, and on a GPU the runner uses bf16 automatically.

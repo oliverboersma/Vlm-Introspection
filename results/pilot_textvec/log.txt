@@ -1,0 +1,11 @@
+Loading weights:   0%|          | 0/489 [00:00<?, ?it/s]Loading weights:  22%|██▏       | 108/489 [00:00<00:00, 1062.20it/s]Loading weights:  44%|████▍     | 215/489 [00:00<00:00, 978.66it/s] Loading weights:  68%|██████▊   | 332/489 [00:00<00:00, 1061.49it/s]Loading weights: 100%|██████████| 489/489 [00:00<00:00, 1271.14it/s]
+HuggingFaceTB/SmolVLM-500M-Instruct: 32 layers
+[extract] 8 concepts × 5 layers in 9s
+[sweep] red done, 439s elapsed
+[sweep] blue done, 867s elapsed
+[sweep] green done, 1294s elapsed
+[sweep] yellow done, 1719s elapsed
+[sweep] circle done, 2146s elapsed
+[sweep] square done, 2584s elapsed
+[sweep] triangle done, 3037s elapsed
+[sweep] star done, 3494s elapsed
