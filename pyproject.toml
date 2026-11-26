@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vlm-introspection"
+version = "0.1.0"
+description = "Seen or thought? Cross-modal concept injection and introspection in vision-language models"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.2",
+  "transformers>=4.46",
+  "accelerate",
+  "pillow",
+  "numpy",
+  "matplotlib",
+  "num2words",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: downloads and runs a real VLM"]
+addopts = "-m 'not slow'"

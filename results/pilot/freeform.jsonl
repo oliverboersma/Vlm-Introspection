@@ -1,0 +1,200 @@
+{"concept": "red", "condition": "none", "layer": -1, "alpha": 0.0, "site": "none", "question": "describe", "target": 0, "text": "A close-up shot of a person's hand holding a small, round, white object. The", "hit": false}
+{"concept": "red", "condition": "none", "layer": -1, "alpha": 0.0, "site": "none", "question": "describe", "target": 1, "text": "A close-up of a hand holding a small, round, metallic object. The object is shiny", "hit": false}
+{"concept": "red", "condition": "none", "layer": -1, "alpha": 0.0, "site": "none", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "red", "condition": "none", "layer": -1, "alpha": 0.0, "site": "none", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "image", "question": "describe", "target": 0, "text": "The image depicts a close-up of a person's hand holding a smartphone. The smartphone is held", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "image", "question": "describe", "target": 1, "text": "The image depicts a close-up of a person's hand holding a smartphone. The smartphone is held", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "text", "question": "describe", "target": 0, "text": "The image is a photograph of a situation that is not a question. It is a straightforward and a", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "text", "question": "describe", "target": 1, "text": "The image is a photograph of a situation that is not a question. It is a straightforward and a", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 0, "text": "The word.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 1, "text": "The word.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "image", "question": "describe", "target": 0, "text": "This image is a photograph of a person holding a book. The person is wearing a white shirt and", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "image", "question": "describe", "target": 1, "text": "This image is a photograph of a person holding a book. The person is wearing a white shirt and", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "text", "question": "describe", "target": 0, "text": "The Thes.\n    Thes. Thes. Thes. Thes. Thes.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "text", "question": "describe", "target": 1, "text": "The Thes. Thes. Thes. Thes. Thes. Thes. The", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 0, "text": "in usually in a typical in a can in a usually in a in a in a in a in", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 1, "text": "in the usually in a typical in a typical in a can in a usually in a in a in", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "image", "question": "describe", "target": 0, "text": "The image shows a close-up of a person's hand holding a smartphone. The smartphone is held", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "image", "question": "describe", "target": 1, "text": "A person is holding a book.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "text", "question": "describe", "target": 0, "text": "The image is a photograph of a specific image. The image of a person, which is a key", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "text", "question": "describe", "target": 1, "text": "The image is a photograph of a specific image. The image of a person, which is a key", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 0, "text": "The image is a question and the answer. The person or the situation in the image. The person", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 1, "text": "The image is a question and the answer. The information is not mentioned in the image. The person", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "image", "question": "describe", "target": 0, "text": "A person is holding a gun.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "image", "question": "describe", "target": 1, "text": "A person is holding a gun.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "text", "question": "describe", "target": 0, "text": "It's a. It's a. It. It. It. It. It. It.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "text", "question": "describe", "target": 1, "text": "It's a. It's a. It. It. It. It. It. It.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 0, "text": "In a. In. In. In. In. In. In. In. In. In", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 1, "text": "In a. In. In. In. In. In. In. In. In. In", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "image", "question": "describe", "target": 0, "text": "The image is a photograph of a person standing in a room. The person is wearing a white shirt", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "image", "question": "describe", "target": 1, "text": "The image is a photograph of a book cover. The cover is predominantly black with a white and red", "hit": true}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "text", "question": "describe", "target": 0, "text": "The image is a part of a price. It is a part of a price. It is a", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "text", "question": "describe", "target": 1, "text": "The image is a part of a price. It is a part of a price. It is a", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 0, "text": "In the case of a. In the case. In the case.In.In.In.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 1, "text": "In the case of a. In the case. In the case.In.In.In.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "image", "question": "describe", "target": 0, "text": "This image is a photograph of a person standing in a room. The person is wearing a white shirt", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "image", "question": "describe", "target": 1, "text": "This image is a photograph of a person standing in a room. The person is wearing a white shirt", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 0, "text": "Yes, there is a word in the image.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 1, "text": "Yes, there is a word in the image.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "text", "question": "describe", "target": 0, "text": "A.A.S.A.A.A.A.A.A.A.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "text", "question": "describe", "target": 1, "text": "A.A.S.A.A.A.A.A.A.A.", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 0, "text": "-;;;;;;;;;;;;;;;;;;;", "hit": false}
+{"concept": "red", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 1, "text": "-;;;;;;;;;;;;;;;;;;;", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 1.0, "site": "image", "question": "describe", "target": 0, "text": "The image depicts a close-up view of a person's hand holding a small, rectangular, metallic", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 1.0, "site": "image", "question": "describe", "target": 1, "text": "The image depicts a close-up view of a person's hand holding a small, rectangular, metallic", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 1.0, "site": "text", "question": "describe", "target": 0, "text": "The image of a single bird, and the following 100000000", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 1.0, "site": "text", "question": "describe", "target": 1, "text": "The image of a single bird, and the following 100000000", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 0, "text": "1. The word \"the\" is not a word, and the idea of an \"idea", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 1, "text": "1. The word \"the\" in the first sentence, \"of\" the second in the", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 2.0, "site": "image", "question": "describe", "target": 0, "text": "This is a photograph of a city.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 2.0, "site": "image", "question": "describe", "target": 1, "text": "This is a photograph of a city.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 2.0, "site": "text", "question": "describe", "target": 0, "text": "course ofsecution\u00a0,\u00a0over\u00a0,", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 2.0, "site": "text", "question": "describe", "target": 1, "text": "fun\u00a0,\u00a0con\u00a0,", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 0, "text": "of your loss, and of such as \"1 of 2, 1 of 1,", "hit": false}
+{"concept": "red", "condition": "random", "layer": 8, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 1, "text": "of your loss, and of such as \"independence of \"anger, and of such as \"", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 1.0, "site": "image", "question": "describe", "target": 0, "text": "A simple, yet detailed, image of a book cover. The cover is predominantly white with a subtle", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 1.0, "site": "image", "question": "describe", "target": 1, "text": "A close-up of a hand holding a small, round, metallic object. The object is shiny", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 0, "text": "Nothing.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 1.0, "site": "text", "question": "describe", "target": 0, "text": "This image is also a good one, it is a good one.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 1.0, "site": "text", "question": "describe", "target": 1, "text": "This image is also a good one, it is a good one.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 0, "text": "If so, does it reflect on the world?\n\n)\n\n)\n\n)", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 1, "text": "If so, does it reflect on the same?\n\n(The same, is it the same", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 2.0, "site": "image", "question": "describe", "target": 0, "text": "The image is a photograph of a person standing in a room. The person is wearing a hat,", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 2.0, "site": "image", "question": "describe", "target": 1, "text": "The image is a photograph of a person standing in a room. The person is wearing a hat,", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 2.0, "site": "text", "question": "describe", "target": 0, "text": ", a, a, a, \u0259, a, \u0440\u0443, \u0440\u0443,", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 2.0, "site": "text", "question": "describe", "target": 1, "text": ", a, a, a, a, a, a, a, a, a, a", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 0, "text": ", What, What, of, U, U, (), U, (, U, U", "hit": false}
+{"concept": "red", "condition": "random", "layer": 12, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 1, "text": ", PAN PANP, PAN P, P, P, P (, P),", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 1.0, "site": "image", "question": "describe", "target": 0, "text": "The image is a photograph of a book cover. The cover is predominantly white with a black border around", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 1.0, "site": "image", "question": "describe", "target": 1, "text": "The image is a photograph of a book cover. The cover is predominantly white with a black border around", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 1.0, "site": "text", "question": "describe", "target": 0, "text": "or.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 1.0, "site": "text", "question": "describe", "target": 1, "text": "or.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 0, "text": "or.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 1, "text": "or.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 2.0, "site": "image", "question": "describe", "target": 0, "text": "The image is a photograph of a person standing in a field. The person is wearing a long-", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 2.0, "site": "image", "question": "describe", "target": 1, "text": "The image depicts a close-up of a person's hand holding a small, round object. The", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 0, "text": "Love.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 1, "text": "Love.", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 2.0, "site": "text", "question": "describe", "target": 0, "text": "or a or in or or or or or or or or or or or or or or or or", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 2.0, "site": "text", "question": "describe", "target": 1, "text": "or a or in or or or or or or or or or or or or or or or or", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 0, "text": "or, or, or, or, or, or, or, or or, or, or", "hit": false}
+{"concept": "red", "condition": "random", "layer": 16, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 1, "text": "or, or, or, or, or, or, or, or or, or, or", "hit": false}
+{"concept": "blue", "condition": "none", "layer": -1, "alpha": 0.0, "site": "none", "question": "describe", "target": 0, "text": "A close-up shot of a person's hand holding a small, round, white object. The", "hit": false}
+{"concept": "blue", "condition": "none", "layer": -1, "alpha": 0.0, "site": "none", "question": "describe", "target": 1, "text": "A close-up of a hand holding a small, round, metallic object. The object is shiny", "hit": false}
+{"concept": "blue", "condition": "none", "layer": -1, "alpha": 0.0, "site": "none", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "none", "layer": -1, "alpha": 0.0, "site": "none", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "image", "question": "describe", "target": 0, "text": "The image depicts a close-up view of a hand holding a small, rectangular, metallic object.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "image", "question": "describe", "target": 1, "text": "The image depicts a close-up view of a hand holding a small, rectangular, metallic object.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "text", "question": "describe", "target": 0, "text": "", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "text", "question": "describe", "target": 1, "text": "", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 0, "text": "", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 1, "text": "", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "image", "question": "describe", "target": 0, "text": "The image depicts a close-up view of a person's hand holding a smartphone. The hand is", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "image", "question": "describe", "target": 1, "text": "The image is a photograph of a book cover. The cover is predominantly white with a black border around", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 0, "text": "Love.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "text", "question": "describe", "target": 0, "text": "this image of this image of this image of this image of this image of this image of", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "text", "question": "describe", "target": 1, "text": "this is an image of an image of an image of an image of an image of an", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 0, "text": "this is an image that I\n\nthis is an image that I\n\nthis is an image", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 8, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 1, "text": "this is an image of an image of an image of an image of an image of an image of", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "image", "question": "describe", "target": 0, "text": "The image is a photograph of a book cover. The cover is predominantly white with a black border around", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "image", "question": "describe", "target": 1, "text": "A black and white photograph of a man and a woman. The man is wearing a suit and tie", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "text", "question": "describe", "target": 0, "text": "", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "text", "question": "describe", "target": 1, "text": "", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 0, "text": "I do this.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 1, "text": "I do that.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "image", "question": "describe", "target": 0, "text": "The image is a photograph of a book cover. The cover is predominantly white with a black border around", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "image", "question": "describe", "target": 1, "text": "The image is a photograph of a book cover. The cover is predominantly white with a black border around", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 0, "text": "Love.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 1, "text": "Love.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "text", "question": "describe", "target": 0, "text": "which is an\nwhich has an\nwhich has which\nwhich has which which is which which is", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "text", "question": "describe", "target": 1, "text": "that which\nwhich\nwhich\nwhich\nwhich\nwhich\nwhich\nwhich\nwhich\nwhich", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 0, "text": "which of which\nwhich of which\nwhich of which\nwhich of which\nwhich of which", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 12, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 1, "text": "which of which\nwhich of which\nwhich of which\nwhich of which\nwhich of which", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "image", "question": "describe", "target": 0, "text": "The image is a photograph of a book cover. The cover is predominantly white with a black border around", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "image", "question": "describe", "target": 1, "text": "A black and white photograph of a man and a woman. The man is wearing a suit and tie", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "text", "question": "describe", "target": 0, "text": "The image represents a mathematical notation of a mathematical expression. The expression is presented as a mathematical expression,", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "text", "question": "describe", "target": 1, "text": "The image represents a mathematical notation of a mathematical expression. The expression is presented as a mathematical expression,", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 0, "text": "I can see that.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 1, "text": "I can see that.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "image", "question": "describe", "target": 0, "text": "The image depicts a close-up of a hand holding a small, rectangular, metallic object. The", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "image", "question": "describe", "target": 1, "text": "The image depicts a close-up of a hand holding a small, rectangular, metallic object. The", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 0, "text": "Nothing.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "text", "question": "describe", "target": 0, "text": "which is that which you can that which which you that which which which that which which which which which", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "text", "question": "describe", "target": 1, "text": "no which is which of which log that which of which log that which which which that which which which", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 0, "text": "which of which you which of which which that which which\n which of which you which of which that", "hit": false}
+{"concept": "blue", "condition": "concept", "layer": 16, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 1, "text": "which of which you which of which which that which which\n which of which you which of which that", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 1.0, "site": "image", "question": "describe", "target": 0, "text": "This image is a simple, yet detailed, diagram of a circuit board. The circuit board is the", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 1.0, "site": "image", "question": "describe", "target": 1, "text": "This image is a photograph of a book cover. The cover is predominantly white with a black border around", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 1.0, "site": "text", "question": "describe", "target": 0, "text": "The text \"The text\" of this image: The text of this image: The text of this", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 1.0, "site": "text", "question": "describe", "target": 1, "text": "The text \"The text\" of this image: The text of the image: The text of the", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 0, "text": "(1) The text of (1) the person who is not in this document, is there", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 1, "text": "(1) The text of (1) (2) (3) (4) (5", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 2.0, "site": "image", "question": "describe", "target": 0, "text": "The image is a photograph of a book cover. The cover is predominantly black with a white and yellow", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 2.0, "site": "image", "question": "describe", "target": 1, "text": "The image is a photograph of a book cover. The cover is predominantly black with a white and yellow", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 2.0, "site": "text", "question": "describe", "target": 0, "text": "(): \\exists \\exists \\Rightarrow \\Rightarrow : \\exists \\exists \\exists \\", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 2.0, "site": "text", "question": "describe", "target": 1, "text": "(): \\exists \\exists \\Rightarrow \\Rightarrow : \\exists \\exists \\exists \\", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 0, "text": "\\ ( \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 8, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 1, "text": "\\ ( \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 1.0, "site": "image", "question": "describe", "target": 0, "text": "This image is a photograph of a book cover. The cover is predominantly white with a black border around", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 1.0, "site": "image", "question": "describe", "target": 1, "text": "This image is a photograph of a book cover. The cover is predominantly white with a black border around", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 1.0, "site": "text", "question": "describe", "target": 0, "text": "No Image.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 1.0, "site": "text", "question": "describe", "target": 1, "text": "No Image.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 0, "text": "No; there is no answer; there is no question; there is no answer; there is no", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 1, "text": "No; there is no answer; there is no question; there is no answer; there is no", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 2.0, "site": "image", "question": "describe", "target": 0, "text": "The image depicts a close-up of a hand holding a small, rectangular, metallic object. The", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 2.0, "site": "image", "question": "describe", "target": 1, "text": "The image depicts a close-up of a hand holding a small, rectangular object. The object appears", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 2.0, "site": "text", "question": "describe", "target": 0, "text": "20 OF 2 OR 1 OR 2 OR 1 OR 2 OR", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 2.0, "site": "text", "question": "describe", "target": 1, "text": "1 OF 2 OR 2 OR 1 OR 2 OR 1 OR 2", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 0, "text": "2 OF 2 OR 2 OR 2 OR 1 OR 2 OR 1", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 12, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 1, "text": "2 OF 2 OR 2 OR 2 OR 1 OR 2 OR 1", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 1.0, "site": "image", "question": "describe", "target": 0, "text": "The image depicts a close-up view of a hand holding a small, rectangular, metallic object.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 1.0, "site": "image", "question": "describe", "target": 1, "text": "The image depicts a close-up view of a hand holding a small, rectangular, metallic object.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 0, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 1.0, "site": "image", "question": "intrusion", "target": 1, "text": "No.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 1.0, "site": "text", "question": "describe", "target": 0, "text": "Text conversion.\n\n# 1. Text conversion.\n\n# 1.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 1.0, "site": "text", "question": "describe", "target": 1, "text": "Text conversion.\n\n# 1. Text conversion.\n\n# 1.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 0, "text": "Yes.\n\n#\n\n#\n\n#\n\n#\n\n#\n\n#", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 1.0, "site": "text", "question": "intrusion", "target": 1, "text": "Yes.\n\n#\n\n#\n\n#\n\n#\n\n#\n\n#", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 2.0, "site": "image", "question": "describe", "target": 0, "text": "This image is a photograph of a white background with a black border. The image is a close-", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 2.0, "site": "image", "question": "describe", "target": 1, "text": "This image is a photograph of a person standing in a room. The person is wearing a white shirt", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 0, "text": "\"image\".", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 2.0, "site": "image", "question": "intrusion", "target": 1, "text": "\"ideas\" in one word.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 2.0, "site": "text", "question": "describe", "target": 0, "text": "One.  One.  One.  One.  One.  One.  One.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 2.0, "site": "text", "question": "describe", "target": 1, "text": "One.``````````````````", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 0, "text": "One. Happy. Happy. Happy. Happy. Happy. Happy. Happy. Happy. Happy.", "hit": false}
+{"concept": "blue", "condition": "random", "layer": 16, "alpha": 2.0, "site": "text", "question": "intrusion", "target": 1, "text": "One. Happy. Happy. Happy. Happy. Happy. Happy. Happy. Happy. Happy.", "hit": false}
