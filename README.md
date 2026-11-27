@@ -158,6 +158,14 @@ Caveats that bound these claims:
 4. **Explain the layer-12 dip** and the layer-20 cutoff with an
    attention-to-image-tokens analysis.
 
+## Harness problems
+
+[`harness_problems/`](harness_problems/) turns next steps 1 and 2 into problems
+for an agentic harness with held-out evaluation: design a SEE / THINK / NEITHER
+probe that classifies calibration items of known provenance. Three
+hand-written wordings score 0.33-0.44 balanced accuracy (chance 0.33). All of
+them see well, and none separates "thinking about" from "not thinking about".
+
 ## Layout
 
 ```
@@ -172,6 +180,7 @@ src/vlm_introspection/
 scripts/run_pilot.py        end-to-end run (--vectors image|text)
 scripts/analyze.py          summary.md, headline.png, sweep.png for a run directory
 scripts/compare_vectors.py  cosine similarity of image- vs text-derived vectors
+harness_problems/           probe-calibration problems for the agentic harness (held-out checker, dev evaluator)
 configs/                    pilot grids
 results/pilot/              image-derived vectors   results/pilot_textvec/  text-derived vectors
 ```

@@ -1,0 +1,71 @@
+title = "A calibrated SEE / THINK / NEITHER probe for SmolVLM-500M"
+domain = "empirical"
+tags = ["vlm", "introspection", "probe-design", "held-out-eval"]
+
+statement = """
+Design a forced-choice probe that tells, for a concept c, whether the model SEES c in the image, is only
+THINKING about c (it is on its mind but not in the image), or NEITHER. This is next step 2 of the
+project README ("a cleaner THINK probe ... with real-image and imagined-concept calibration items"):
+before a probe can read out injected concepts, it has to classify calibration items whose provenance
+is known.
+
+A submission is one question template containing {idea} (filled with "the color red", "a circle", ...)
+and the three answers it asks for. The trusted evaluation shows SmolVLM-500M-Instruct held-out
+calibration items of six types (c' and c'' are other concepts of c's family; "context" is a sentence
+before the question that puts a concept in mind):
+
+  see                 image of c,    no context              -> see
+  see_distractor      image of c,    context about c'        -> see
+  think               neutral image, context about c         -> think
+  think_distractor    image of c',   context about c         -> think
+  neither             neutral image, no context              -> neither
+  neither_distractor  image of c',   context about c''       -> neither
+
+The prediction is the answer with the highest first-token log-probability. The probe passes when every
+item type is at least 60 % correct and balanced accuracy is at least 75 % (chance is 33 %), on 144
+held-out items (3 seeds x 8 concepts x 6 types) with context phrasings you do not see.
+
+The question must ask about the model's own state, not about the prompt: words such as "mention",
+"text", "word", "prompt", "above", "context", "told", "asked" are rejected (full list in ref/calib.py).
+"""
+
+source = "Vlm-Introspection README, Next steps 2; probes.py and stimuli.py for wording and stimuli."
+
+notes = """
+ref/dev_eval.py scores a candidate on development items (other seeds, other context phrasings) with the
+same code the checker uses (ref/calib.py):
+
+    python ref/dev_eval.py candidate.json --seeds 1 2          # ~1.5 min on CPU, 96 items
+    python ref/dev_eval.py candidate.json --seeds 1 --json     # per-item log-probs
+
+or import it in one run_python call and evaluate many candidates while the model stays loaded (loading
+takes ~15 s; each new image costs ~2.5 s in the vision tower once, then ~0.3 s per item).
+
+Calibration of the bar, measured on development items when this problem was written (balanced accuracy):
+an A/B/C wording 0.39, a seen/imagined/absent wording 0.33, a 1/2/3 wording 0.44 (see 0.88, think 0.25,
+neither 0.00). The model separates "in the image" from "not in the image" but has so far not separated
+"thinking about" from "not thinking about". Whether any wording does on a 500M model is open; if careful
+attempts fail, report that with evidence. It is the README's open question about this model's THINK channel.
+"""
+
+[witness]
+role = "solves"
+checker = "checker.py"
+timeout_s = 1800
+memory_mb = 16384
+witness_format = """
+{"question": "... {idea} ...", "answers": {"see": "<answer>", "think": "<answer>", "neither": "<answer>"}}
+question: 10-600 characters, {idea} exactly once, no other braces, no prompt-referring words.
+answers: three different strings of 1-12 letters or digits; their first tokens must differ.
+"""
+
+[workspace]
+files = ["calib.py", "dev_eval.py", "../../src/vlm_introspection", "../../README.md"]
+
+[environment]
+vars = {HF_HOME = "~/.cache/huggingface", TOKENIZERS_PARALLELISM = "false"}
+
+[sandbox]
+memory_mb = 16384
+python_timeout_s = 900
+python_max_timeout_s = 3600

@@ -1,0 +1,40 @@
+title = "A calibrated SEE / THINK / NEITHER probe for SmolVLM-2.2B"
+domain = "empirical"
+tags = ["vlm", "introspection", "probe-design", "held-out-eval", "gpu"]
+
+statement = """
+Same task, items, scoring and pass bar as think-probe-calibration (see ref/README.md and ref/calib.py),
+on SmolVLM-Instruct (2.2B) instead of the 500M model: design a forced-choice probe whose answers
+classify held-out calibration items as SEE, THINK or NEITHER, with every item type at least 60 %
+correct and balanced accuracy at least 75 %. The question must ask about the model's own state, not
+about the prompt.
+"""
+
+source = "Vlm-Introspection README, Next steps 1-2 (find a model whose THINK channel responds)."
+
+notes = """
+Run on a GPU (about 5 GB in bf16); on CPU each evaluation is several times slower than for 500M.
+ref/dev_eval.py reads the model from CALIB_MODEL, which this problem sets. If a probe passes the 500M
+problem, try it here first.
+"""
+
+[witness]
+role = "solves"
+checker = "../think-probe-calibration/checker.py"
+timeout_s = 3600
+memory_mb = 32768
+witness_format = """
+{"question": "... {idea} ...", "answers": {"see": "<answer>", "think": "<answer>", "neither": "<answer>"}}
+"""
+
+[workspace]
+files = ["../think-probe-calibration/calib.py", "../think-probe-calibration/dev_eval.py",
+         "../../src/vlm_introspection", "../../README.md"]
+
+[environment]
+vars = {HF_HOME = "~/.cache/huggingface", TOKENIZERS_PARALLELISM = "false", CALIB_MODEL = "HuggingFaceTB/SmolVLM-Instruct"}
+
+[sandbox]
+memory_mb = 32768
+python_timeout_s = 1800
+python_max_timeout_s = 3600
